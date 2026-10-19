@@ -152,7 +152,7 @@
         if (!isDash(cell.textContent)) games += 1;
       });
 
-      const proj = (games * fpg).toFixed(1);
+      const proj = (games * fpg).toFixed(2);
       const projCell = ensureRowCell(row, fpIdx);
       if (projCell) projCell.textContent = proj;
     });
